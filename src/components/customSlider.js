@@ -1,28 +1,25 @@
 import React, { useState } from "react";
-import axios from "axios";
-// import sample from "../images/Gintoki.png";
+import "../App.css";
 
-function CustomSlider() {
-  const [file, setFile] = useState("");
-
-  function fileSelectedHandler(e) {
-    setFile(e.target.files[0]);
-  }
-
-  function fileUploadHandler() {
-    const fd = new FormData();
-    fd.append("file", file, file.name);
-    console.log(file);
-    axios.post("/predict", fd).then((res) => {
-      console.log(res);
-    });
-  }
-
+function CustomSlider(props) {
   return (
     <>
-      <input type="file" onChange={fileSelectedHandler} />
-      <button onClick={fileUploadHandler}>Upload</button>
-      Files
+      <button
+        id="uploadCustom"
+        onClick={props.fileUploadHandler}
+        disabled={props.buttonState}
+      >
+        Predict
+      </button>
+      <label for="file-input">
+        <img
+          id="imgCustom"
+          style={{ width: "250px", height: "324px" }}
+          src={props.image}
+          alt={"UploadIMG"}
+        />
+      </label>
+      <input id="file-input" type="file" onChange={props.fileSelectedHandler} />
     </>
   );
 }
