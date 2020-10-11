@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ICG Demo</title>
+    <title>NTU IEEE Image Caption Generator</title>
     <link
       href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,13 +24,15 @@
   <body>
     <nav class="navbar navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="{{ url_for('home') }}">ICG Demo</a>
+        <a class="navbar-brand" href="{{ url_for('home') }}"
+          >Techathlon: Image Caption Generator</a
+        >
         <button class="btn btn-outline-secondary my-2 my-sm-0">
           <a
-            href="https://github.com/maheshdhoran/image-caption-generator"
+            href="https://github.com/ritikbhatia/Image-Captioning"
             type="blank"
           >
-            Check Repo</a
+            View GitHub Repository</a
           >
         </button>
       </div>
@@ -38,11 +40,17 @@
     <div class="container">
       <div id="content" style="margin-top: 2em">
         <h2 class="text-center display-4" style="font-size: 2rem; color: white">
-          Image Caption Generator using ML
+          Techathlon: Image Caption Generator
         </h2>
 
+        <!-- Need to Explain this -->
         <div class="mx-auto col-lg-6 mt-5 mb-4">
-          <form id="upload-file" method="post" enctype="multipart/form-data">
+          <form
+            id="upload-file"
+            method="post"
+            enctype="multipart/form-data"
+            action="/predict"
+          >
             <div class="form-group mx-auto">
               <label for="imageUpload" class="upload-label">
                 Choose Image...
@@ -51,25 +59,25 @@
                 type="file"
                 name="file"
                 id="imageUpload"
-                accept=".jpg, .jpeg, .png"
+                accept=".jpg, .jpeg, .png, .JPG, .JPEG, .PNG"
               />
+              <div class="image-section" style="display: none">
+                <div class="img-preview">
+                  <div id="imagePreview"></div>
+                </div>
+                <div>
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-lg"
+                    id="btn-predict"
+                  >
+                    Predict!
+                  </button>
+                </div>
+              </div>
             </div>
           </form>
-
-          <div class="image-section" style="display: none">
-            <div class="img-preview">
-              <div id="imagePreview"></div>
-            </div>
-            <div>
-              <button
-                type="submit"
-                class="btn btn-primary btn-lg"
-                id="btn-predict" onclick="upload()"
-              >
-                Predict!
-              </button>
-            </div>
-          </div>
+          <!-- End of our explanantion -->
 
           <div class="loader" style="display: none">
             <span></span>
@@ -78,8 +86,9 @@
             <span></span>
           </div>
 
-          <h3 id="result" style="color: white; font-size: 1.4rem">
-            <span> </span>
+          <!-- id="result" -->
+          <h3 style="color: white; font-size: 1.4rem">
+            Generated Caption is: {{ result }}
           </h3>
         </div>
       </div>
