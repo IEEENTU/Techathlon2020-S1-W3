@@ -15,22 +15,22 @@ export const socialMedia = [
   {
     name: "Facebook",
     image: FbPic,
-    url: "#",
+    url: "https://www.facebook.com/IEEENTU/",
   },
   {
     name: "Instagram",
     image: IgPic,
-    url: "#",
+    url: "https://www.instagram.com/ieee_ntu/?hl=en",
   },
   {
-    name: "LinkedIn",
+    name: "https://www.linkedin.com/company/ieee-ntu-student-branch",
     image: LiPic,
     url: "#",
   },
   {
     name: "Gmail",
     image: GmPic,
-    url: "#",
+    url: "mailto:ieeenti-branch@e.ntu.edu.sg",
   },
 ];
 

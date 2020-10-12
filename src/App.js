@@ -7,6 +7,11 @@ import SocialMedia from "./components/socialMedia.js";
 import "./App.css";
 import Slider from "./components/slider.js";
 
+import "swiper/swiper.scss";
+import "swiper/components/effect-fade/effect-fade.scss";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+
 function App() {
   return (
     <div className="App">
