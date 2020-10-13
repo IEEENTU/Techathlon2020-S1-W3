@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { EffectCoverflow } from "swiper";
+
 import Caption from "./caption.js";
 import CustomSlider from "./customSlider.js";
 import axios from "axios";
@@ -15,6 +16,8 @@ function Slider() {
   const [image, setImage] = useState(pictureList[userIndex].path);
   const [buttonState, setButtonState] = useState(true);   
 
+
+  
   function fileSelectedHandler(e) {
     let currentFile = e.target.files[0];
     console.log(e.target);

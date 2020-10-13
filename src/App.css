@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  background: #eee;
+  background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -113,6 +113,7 @@ body {
 }
 
 #uploadCustom {
+  /* For Upload Button, if necessary*/
   position: absolute;
   bottom: 0px;
   width: 117%;
