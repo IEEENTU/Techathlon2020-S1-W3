@@ -39,18 +39,14 @@ body {
   width: 100%;
 }
 
-.container {
-  color: darkblue;
-  display: flex;
-  justify-content: center;
-}
-
 .items {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  color: darkblue;
+  justify-content: center;
 }
 
 #title {

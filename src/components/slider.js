@@ -15,8 +15,6 @@ function Slider() {
   const [caption, setCaption] = useState(pictureList[userIndex].caption);
   const [image, setImage] = useState(pictureList[userIndex].path);
   const [buttonState, setButtonState] = useState(true);   
-
-
   
   function fileSelectedHandler(e) {
     let currentFile = e.target.files[0];

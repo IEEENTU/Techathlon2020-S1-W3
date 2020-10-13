@@ -1,36 +1,19 @@
 import React from "react";
-import Header from "./components/header.js";
-import Title from "./components/title.js";
-import Subtitle from "./components/subtitle.js";
-import Tagline from "./components/tagline.js";
-import SocialMedia from "./components/socialMedia.js";
-import "./App.css";
-import Slider from "./components/slider.js";
-
-import "swiper/swiper.scss";
-import "swiper/components/effect-fade/effect-fade.scss";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./App.css";
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Home from "./components/home.js";
+import ImageCaptioner from "./components/imageCaptioner.js";
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-
-      <div className="container">
-        <div className="items">
-          <br />
-          <Title />
-          <Subtitle />
-          <br />
-          <Slider />
-          <br />
-          <SocialMedia />
-          <Tagline />
-        </div>
-      </div>
-    </div>
-  );
+  return (     
+    <Router>
+      <Switch>
+  <div className="App">
+    <Route path = '/' component = {Home} exact />    
+    <Route path = '/image-captioner' component = {ImageCaptioner}  />
+  </div>;
+  </Switch>
+  </Router>
+  )
 }
 
 export default App;
