@@ -21,7 +21,11 @@
   "scripts": {
     "start": "react-scripts start",
     "start-flask": "cd flask && venv\\Scripts\\activate && flask run",
-    "dev": "npm-run-all --parallel start start-flask",
+    "npm-mod": "npm install",
+    "virtual-env": "cd flask && python -m venv venv",
+    "pip-mod": "cd flask && venv\\Scripts\\activate && pip install -r requirements.txt",
+    "dependencies":"npm-run-all -s npm mod virtual-env pip-mod",
+    "dev": "npm-run-all -p start start-flask",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
