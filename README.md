@@ -6,9 +6,11 @@ _iCap is an image captioning tool that incorporates machine learning to derive c
 
 ## Getting Started
 
-The **Node** scripts in this project have been modified to download all **Python** and **Node** dependencies automatically.
+After cloning the project, enter the project's main directory (`image-captioner`) and type the following command in the terminal to download and enable multiple **npm** scripts execution in **Node**:
 
-After cloning the project, enter the project's main directory (`image-captioner`) and type the following command to download all the dependencies:
+`npm install npm-run-all --save-dev`
+
+The **Node** scripts in this project have been modified to download all **Python** and **Node** dependencies automatically. Type the following command in the terminal to download all dependencies:
 
 `npm run dependencies`
 
