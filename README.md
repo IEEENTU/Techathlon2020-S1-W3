@@ -8,7 +8,7 @@ _iCap is an image captioning tool that incorporates machine learning to derive c
 
 The **Node** scripts in this project have been modified to download all **Python** and **Node** dependencies automatically.
 
-After cloning the project, enter the project's main directory and type the following command to download all the dependencies:
+After cloning the project, enter the project's main directory (`image-captioner`) and type the following command to download all the dependencies:
 
 `npm run dependencies`
 
@@ -29,10 +29,10 @@ This project was a collaborative effort for the **IEEE Techathlon 2020** worksho
 
 #### Back-End
 
-- [Amrita](https://github.com/amritaravishankar)
+- [Amrita Ravishankar](https://github.com/amritaravishankar)
 - [Harsh Doddannavar](https://github.com/Harsh3563)
 
 #### Front-End
 
-- [Akshit K](https://github.com/swankyhacker)
-- [Ashwin P](https://github.com/ashwin2201)
+- [Akshit Kumar](https://github.com/swankyhacker)
+- [Ashwin Pande](https://github.com/ashwin2201)
