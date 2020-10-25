@@ -35,8 +35,8 @@ function Slider() {
     setButtonState(true);
     axios.post("/predict", fd).then((res) => {
       console.log(res.data);
+      setCaption(res.data);
       pictureList[userIndex].caption = res.data;
-      setCaption(res.data);      
     });
   }
 
