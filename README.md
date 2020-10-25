@@ -1,8 +1,8 @@
-# iCap (Image-Captioner)
+# CaptionAI (Image-Captioner)
 
-![](./src/others/sample.png "iCap")
+![](./src/others/sample.png "CaptionAI")
 
-_iCap is an image captioning tool that incorporates machine learning to derive captions for images uploaded to the application. This application leverages **Flask** for handling the back-end request processing and the **React** framework for a fulfilling front-end user experience._
+_CaptionAI is an image captioning tool that incorporates machine learning to derive captions for images uploaded to the application. This application leverages **Flask** for handling the back-end request processing and the **React** framework for a fulfilling front-end user experience._
 
 ## Getting Started
 
