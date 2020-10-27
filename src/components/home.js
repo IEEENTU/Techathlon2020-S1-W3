@@ -33,7 +33,7 @@ function Home(){
        <Link to = "/image-captioner">
            Image Captioner
             </Link>
-            <a href="https://github.com/swankyhacker/image-captioner" target="_blank">
+            <a href="https://github.com/IEEENTU/Techathlon2020-W3" target="_blank">
               <img src={github} style ={myStyles[0]} alt=""/>
               </a>
       </header>
